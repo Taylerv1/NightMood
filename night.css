@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(#3a0033, #08002d);
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+    position: fixed;
+    width: 95%;
+    z-index: 100;
+}
+
+header .logo {
+    font-size: 30px;
+    font-family: system-ui;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+header ul li {
+    margin-right: 30px;
+
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 6px 20px;
+    border-radius: 30px;
+}
+
+header ul li a:hover, .active {
+    background-color: #fff;
+    color: #3a0033;
+}
+
+
+
+.main{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.main::after {
+    content: '';
+    height: 40px;
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+    overflow: hidden;
+    background: linear-gradient(to top,#3a0033,transparent);
+}
+
+.main img {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    /* object-fit: cover; */
+}
+
+#moon {
+    
+    transform: translateY(30px);
+    mix-blend-mode: screen;
+} 
+
+.tayler {
+    font-size: 25px;
+    color: #fff;
+    font-family: system-ui;
+    text-transform: uppercase;
+    transform: translateY(-130px);
+}
+
+
+.content {
+    color: #fff;
+    padding: 30px;
+}
+
+.content h2,p {
+    margin: 20px;
+}
